@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    width: 100%;
+    height: 110px;
+    background-color: rgb(24, 24, 82);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+}
+
+.nav ul li a {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nav b {
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 300px;
+}
+
+.one {
+    width: 100%;
+    height: 600px;
+    background-color: #1ABB9B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.one h1 {
+    font-size: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.star1 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.startStar {
+    font-size: 30px;
+    color: white;
+}
+
+.lineStart {
+    width: 120px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.second {
+    font-size: 28px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.two {
+    width: 100%;
+    height: 64vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* flex-direction: column; */
+}
+
+.two h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.two .cards .card{
+    cursor: pointer;
+    width: 400px;
+    padding: 0px 20px 0px 20px;
+    height: 250px;
+    /* background-color: rgb(223, 86, 131); */
+    border-radius: 15px;
+    position: relative;
+}
+
+
+.two .cards .card:hover:after{
+content: "";
+background-color: rgba(38, 193, 136, 0.783);
+position: absolute;
+top: 0;
+right: -20px;
+transition: 1s !important;
+height: 289px;
+width: 400px;
+border-radius: 10px;
+}
+
+.two .cards .card img {
+    width: 400px;
+    border-radius: 8px;
+}
+
+.cards {
+    width: 100%;
+    height: 45vw;
+    /* gap: 10px; */
+    padding: 0px 55px 0px 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.star2 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #2C3E50;
+}
+
+.portfolioStar {
+    font-size: 30px;
+}
+
+.two .portfolio h1 {
+    color: #2C3E50;
+}
+
+.linePort {
+    width: 120px;
+    height: 3px;
+    background-color: #2C3E50;
+    border-radius: 5px;
+}
+
+.three {
+    width: 100%;
+    height: 68vh;
+    background-color: #1ABB9B;
+}
+
+.three h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.about {
+    color: white;
+    padding-top: 80px;
+    text-align: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.line {
+    width: 120px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.star3 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.star3 .aboutStar i {
+    font-size: 30px;
+}
+
+.aboutText {
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 17vh;
+    margin-top: 70px;
+}
+
+.aboutText1 {
+    line-height: 1.5;
+    height: 100%;
+    width: 420px;
+    font-size: 20px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.aboutButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    /* background-color: red; */
+    margin-top: 60px;
+}
+
+.aboutButton button {
+    color: white;
+    height: 8vh;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0px 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: .5s;
+}
+
+.aboutButton button:hover {
+    background-color: white;
+}
+
+.aboutButton button:hover p {
+    color: black;
+}
+
+.four {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* padding-top: 85px; */
+}
+
+.four h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2C3E50;
+}
+
+.star4 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #2C3E50;
+}
+
+.contactStar {
+    font-size: 30px;
+
+}
+
+.lineContact {
+    width: 120px;
+    height: 3px;
+    background-color: #2C3E50;
+    border-radius: 5px;
+}
+
+
+.input {
+    width: 800px;
+    height: 530px;
+}
+
+.input form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.input input {
+    width: 100%;
+    height: 80px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+}
+
+.input form textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+}
+
+.input form button {
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #6AD3BF;
+    color: white;
+    font-size: 18px;
+    border: none;
+
+
+}
+
+.footer {
+    margin-top: 105px;
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+}
+
+.footer .footerTop {
+    width: 100%;
+    height: 100%;
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footerButtom {
+    width: 100%;
+    height: 20%;
+    background-color: #1A252F;
+}
+
+.footer .footerTop .boxes {
+    width: 80%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.boxes .box {
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    padding-top: 26px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boxes .box h1 {
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxes .box p {
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+.boxes .box .footerP {
+    font-size: 20px;
+}
+
+.footer .footerButtom {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+
+}
+
+.icon1 .icon1Bg {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.icon2 .icon2Bg {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    cursor: pointer;
+
+}
+
+.icon3 .icon3Bg {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.icon4 .icon4Bg {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.box h1,
+p {
+    color: white;
+}
+
+.box a {
+    color: #1ABC9C;
+    text-decoration-line: underline;
+}
+
+.icon1Bg i {
+    color: white;
+    transition: 0.8s;
+}
+
+.icon2Bg i {
+    color: white;
+    transition: 0.8s;
+}
+
+.icon3Bg i {
+    color: white;
+    transition: 0.8s;
+}
+
+.icon4Bg i {
+    color: white;
+    transition: 0.8s;
+}
+
+.icon1Bg:hover {
+    background-color: white;
+}
+
+.icon1Bg:hover i {
+    color: black;
+}
+
+.icon2Bg:hover {
+    background-color: white;
+}
+
+.icon2Bg:hover i {
+    color: black;
+}
+
+.icon3Bg:hover {
+    background-color: white;
+}
+
+.icon3Bg:hover i {
+    color: black;
+}
+
+.icon4Bg:hover {
+    background-color: white;
+}
+
+.icon4Bg:hover i {
+    color: black;
+}
